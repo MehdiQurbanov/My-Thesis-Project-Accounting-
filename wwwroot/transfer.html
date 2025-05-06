@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Pul Köçür</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+  <div class="login-container">
+    <h2>Pul Köçürmə</h2>
+    <form id="transferForm">
+      <input type="text" id="fromAccount" placeholder="Göndərən Hesab Nömrəsi" required />
+      <input type="text" id="toAccount" placeholder="Alıcı Hesab Nömrəsi" required />
+      <input type="number" id="amount" placeholder="Məbləğ" required min="0.01" step="0.01" />
+      <input type="text" id="description" placeholder="Təyinat (isteğe bağlı)" />
+      <button type="submit">Köçür</button>
+    </form>
+    <p id="transferMsg" class="error"></p>
+  </div>
+
+  
+  <script src="js/transfer.js"></script>
+</body>
+
+</html>

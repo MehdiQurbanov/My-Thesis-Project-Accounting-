@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Qeydiyyat</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="login-container">
+    <h2>Yeni İstifadəçi Qeydiyyatı</h2>
+    <form id="registerForm">
+      <input type="text" id="firstName" placeholder="Ad" required />
+      <input type="text" id="lastName" placeholder="Soyad" required />
+      <input type="text" id="otherName" placeholder="Ata adı (opsional)" />
+      <input type="text" id="address" placeholder="Ünvan (opsional)" />
+      <input type="text" id="stateOfOrigin" placeholder="Mənşəyi (opsional)" />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="password" id="password" placeholder="Şifrə" required />
+      <input type="text" id="phoneNumber" placeholder="Əsas telefon nömrəsi" required />
+      <input type="text" id="alternativePhoneNumber" placeholder="Əlavə telefon (opsional)" />
+      <div class="gender-group">
+        <label>Cinsiyyət</label>
+        <div class="gender-box">
+          <label for="male">Kişi</label>
+          <input type="radio" id="male" name="gender" value="male" required />
+        </div>
+        <div class="gender-box">
+          <label for="female">Qadın</label>
+          <input type="radio" id="female" name="gender" value="female" required />
+        </div>
+      </div>
+      <button type="submit">Qeydiyyat</button>
+      <button type="button" onclick="goToLogin()">Giriş pəncərəsi</button>
+    </form>
+    <p id="registerMsg" class="error"></p>
+  </div>
+
+  <script src="js/register.js"></script>
+</body>
+
+</html>

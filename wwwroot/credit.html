@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Pul Yatır</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+  <div class="login-container">
+    <h2>Hesaba Pul Yatır</h2>
+    <form id="creditForm">
+      <input type="text" id="accountNumber" placeholder="Hesab Nömrəsi" required />
+      <input type="number" id="amount" placeholder="Məbləğ" required min="0.01" step="0.01" />
+      <input type="text" id="description" placeholder="Təyinat (isteğe bağlı)" />
+      <button type="submit">Yatır</button>
+    </form>
+    <p id="creditMsg" class="error"></p>
+  </div>
+
+  
+  <script src="js/credit.js"></script>
+</body>
+
+</html>

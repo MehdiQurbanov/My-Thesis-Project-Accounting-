@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bank Login</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+  <div class="login-container">
+    <h2>Bank Sisteminə Giriş</h2>
+    <form id="loginForm">
+      <input type="text" id="username" placeholder="İstifadəçi adı" required />
+      <input type="password" id="password" placeholder="Şifrə" required />
+      <button type="submit">Giriş et</button>
+      <button type="button" onclick="goToRegistration()">Qeydiyyat</button>
+    </form>
+    <p id="errorMsg" class="error"></p>
+  </div>
+
+
+  <script src="js/auth.js"></script>
+</body>
+
+</html>

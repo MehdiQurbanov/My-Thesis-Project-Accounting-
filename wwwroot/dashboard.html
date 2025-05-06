@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>İstifadəçi Paneli</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+  <div class="login-container">
+    <h2>Xoş gəlmisiniz!</h2>
+    <p><strong>Balansınız:</strong> <span id="balance">Yüklənir...</span></p>
+    <div class="dashboard-links">
+      <a href="transfer.html">💸 Pul Köçür</a>
+      <a href="credit.html">➕ Pul Yatır</a>
+      <a href="debit.html">➖ Pul Çıxar</a>
+      <a href="statement.html">📄 Bank Çıxarışı</a>
+      <a href="#" onclick="logout()">🚪 Çıxış</a>
+    </div>
+    <p id="errorMsg" class="error"></p>
+
+    
+  </div>
+  <script src="js/dashboard.js"></script>
+</body>
+
+</html>
